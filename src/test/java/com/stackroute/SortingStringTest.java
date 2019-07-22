@@ -23,11 +23,23 @@ public class SortingStringTest {
     }
 
     @Test
-    public void givenInputStringshouldReturnTranspose() {
-        String expected="a kciuq nworb xof spmuj revo eht yzal god";
-        String actualInput=transposeString.transpose("a quick brown fox jumps over the lazy dog");
+    public void givenInputStringshouldSortString() {
+        String expected="a aa aabbc";
+        String actualInput=sortingString.sortString("aabbc aa a");
         assertEquals(expected,actualInput);
     }
+
+    @Test
+    public void givenInputStringshouldFail() {
+        String expected="a kciuq nworb xof spmuj revo eht yzal god";
+        String actualInput=sortingString.sortString("Java is java again java again");
+        assertNotEquals(expected,actualInput);
+    }
+
+    @Test
+    public void givenInputStringShouldNotBeNull() {
+        String actualInput=sortingString.sortString("aabbc aa a ccc");
+        assertNotNull(actualInput);
     }
 
 }
