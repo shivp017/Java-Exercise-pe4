@@ -23,21 +23,21 @@ public class OccurrencesTest {
     }
 
     @Test
-    public void givenInputShouldCharacterOccurrenceCount() {
+    public void givenInputStringShouldReturnCharacterOccurrenceCount() {
         int expected=10;
         int actualInput=occurrences.characterCount("Java is java again java again",'a');
         assertEquals(expected,actualInput);
     }
 
     @Test
-    public void givenInputCharacterOccuranceCountFailure() {
+    public void givenInputStringShouldReturnCharacterOccuranceCountFailure() {
         int expected=10;
         int actualInput=occurrences.characterCount("Java is java again java again",'J');
         assertNotEquals(expected,actualInput);
     }
 
     @Test
-    public void givenStringShouldNotbeNull() {
+    public void givenInputStringShouldNotbeNull() {
         int actualInput=occurrences.characterCount("Java is java again java again",'J');
         assertNotNull(actualInput);
     }

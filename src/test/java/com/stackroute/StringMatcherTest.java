@@ -32,8 +32,7 @@ public class StringMatcherTest {
         assertEquals(expected,actual);
     }
     @Test
-    public void givenmatchingNotNull() {
-
+    public void givenInputStringShouldNotBeNull() {
         String actual=multipleOccurrences.matchString("She sells seashells by the seashore se","se");
         assertNotNull(actual);
     }

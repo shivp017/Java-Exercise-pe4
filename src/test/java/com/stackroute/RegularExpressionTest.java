@@ -23,21 +23,21 @@ public class RegularExpressionTest {
 
     }
     @Test
-    public void givenInputisHarryHere() {
+    public void givenInputStringShouldReturnTrue() {
         boolean expected=true;
         boolean actual=regularExpression.isHarry("This is harry.");
         assertEquals(expected,actual);
 
     }
     @Test
-    public void givenInputisHarryHereFail() {
+    public void givenInputStringShouldReturnFalse() {
         boolean expected=false;
         boolean actual=regularExpression.isHarry("This is henry.");
         assertEquals(expected,actual);
 
     }
     @Test
-    public void givenInputisHarryHereNotNull() {
+    public void givenInputStringShouldReturnNotNull() {
 
         boolean actual=regularExpression.isHarry("This is henry.");
         assertNotNull(actual);

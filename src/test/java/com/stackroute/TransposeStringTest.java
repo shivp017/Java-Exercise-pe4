@@ -24,14 +24,14 @@ public class TransposeStringTest {
     }
 
     @Test
-    public void givenInputStringshouldReturnTranspose() {
+    public void givenInputStringShouldReturnTranspose() {
         String expected="a kciuq nworb xof spmuj revo eht yzal god";
         String actualInput=transposeString.transpose("a quick brown fox jumps over the lazy dog");
         assertEquals(expected,actualInput);
     }
 
     @Test
-    public void givenInputStringshouldFail() {
+    public void givenInputStringShouldFail() {
         String expected="a kciuq nworb xof spmuj revo eht yzal god";
         String actualInput=transposeString.transpose("Java is java again java again");
         assertNotEquals(expected,actualInput);

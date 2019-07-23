@@ -39,7 +39,7 @@ public class ReplaceCharctersTest {
 
     }
     @Test
-    public void givenreplaceCharactersNull() {
+    public void givenInputNullShouldNull() {
         String actual=replaceCharcters.replaceCharacters(null);
         assertNull(actual);
 

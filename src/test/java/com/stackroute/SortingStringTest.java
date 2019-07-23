@@ -23,14 +23,14 @@ public class SortingStringTest {
     }
 
     @Test
-    public void givenInputStringshouldSortString() {
+    public void givenInputStringShouldSortedString() {
         String expected="a aa aabbc";
         String actualInput=sortingString.sortString("aabbc aa a");
         assertEquals(expected,actualInput);
     }
 
     @Test
-    public void givenInputStringshouldFail() {
+    public void givenInputStringShouldFail() {
         String expected="a kciuq nworb xof spmuj revo eht yzal god";
         String actualInput=sortingString.sortString("Java is java again java again");
         assertNotEquals(expected,actualInput);
