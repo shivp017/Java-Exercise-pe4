@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class StringMatcherTest {
+public class MultipleOccurrencesTest {
     MultipleOccurrences multipleOccurrences;
 
     @Before
